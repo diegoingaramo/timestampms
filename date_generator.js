@@ -24,7 +24,7 @@ module.exports = {
 
   	if (naturalTime != "Invalid Date"){
 
-	  	naturalTime = sMonths[naturalTime.getMonth()] + " " + (naturalTime.getDate() + 1) + ", " + naturalTime.getFullYear();
+	  	naturalTime = sMonths[naturalTime.getMonth()] + " " + (naturalTime.getDate()) + ", " + naturalTime.getFullYear();
 	  	unixTime = parseInt(aDate);
 	  	json = JSON.stringify({unix: unixTime, natural: naturalTime});
 
